@@ -1,0 +1,78 @@
+.ball {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: aquamarine;
+  border: 4px solid #63c7a6; 
+  position: relative;
+  margin-left: auto;
+  top: 40%;
+  right: 4%;
+  
+  &.active {
+    animation: roll 4s ease-in-out;
+  }
+}
+
+@keyframes roll {
+  100% {
+    right: 80%;
+  }
+}
+
+.pin {
+  display: flex;
+  align-items: center;
+
+  * {
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    background-color: whitesmoke;
+    border: 2px solid #2563eb;
+    position: relative;
+  }
+
+  &_1 {
+    left: -141px;
+  }
+  &_2 {
+    bottom: 5%;
+    left: -141px;
+  }
+  &_3 {
+    top: 5%;
+    left: -115px;
+  }
+  &_4 {
+    bottom: 10%;
+    left: -115px;
+  }
+  &_5 {
+    top: 10%;
+    left: -89px;
+  }
+  &_6 {
+    bottom: 15%;
+    left: -89px;
+  }
+  &_7 {
+    top: 15%;
+    left: -63px;
+  }
+  &_8 {
+    left: -11px;
+  }
+  &_9 {
+    bottom: 5%;
+    left: -11px;
+  }
+  &_10 {
+    top: 5%;
+    left: 15px;
+  }
+
+  .inactive {
+    visibility: hidden;
+  }
+}

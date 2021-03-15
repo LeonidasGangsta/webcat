@@ -12,6 +12,14 @@ export type ScoreLineType = {
   total: number,
 }
 
+export type EndGameBoardType = {
+  player1Name: string,
+  player2Name: string,
+  player1: ScoreLineType[],
+  player2: ScoreLineType[],
+  winner: 1 | 2,
+}
+
 export const initialScore: ScoreLineType = {
   firstTry: 0,
   secondTry: 0,
