@@ -275,7 +275,7 @@ const GamePage: React.FC<GameProps> = ({ players, setGameBoard }) => {
         <div className="h-80 bg-gradient-to-r from-yellow-300 to-yellow-400 border rounded-lg border-yellow-800 flex">
           <div className="pin">
             {pinsElements.map((pinNumber, index) =>
-              <div key={pinNumber} className={`pin_${pinNumber} ${pins < index && 'inactive'}`} />
+              <div key={pinNumber} className={`pin_${pinNumber} ${pins <= index && 'inactive'}`} />
             )}
           </div>
           {strike && (
